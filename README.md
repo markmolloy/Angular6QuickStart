@@ -1,27 +1,37 @@
-# NgQuickStart
+# Angular 6 Quick Start App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+Angular 6 app with Firebase role-based authentication, Material, routing, and some other essentials already set up.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Get started
 
-## Code scaffolding
+1. Clone repo
+2. Run `npm install`
+3. Run `ng serve` for a dev server
+4. Navigate to `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Firebase
 
-## Build
+1. Go to [Firebase](https://firebase.google.com/)
+2. Select project or create new project
+3. Copy the contents of the config item from 'Add Firebase to your web app'.  It should look like this:
+```
+    apiKey: "LA5...",
+    authDomain: "yourproject.firebaseapp.com",
+    databaseURL: "https://yourproject.firebaseio.com",
+    projectId: "yourproject",
+    storageBucket: "yourproject.appspot.com",
+    messagingSenderId: "555..."
+```
+4. Paste into `src/environments/environment.ts`
+6. Enable Google authentication (from Firebase Console)
+7. Activate Firestore (also from Firebase Console) 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Material
 
-## Running unit tests
+### Components
+Most of the [AngularMaterial](https://material.angular.io/) components are ready to be used.  To add additional components, add them to `src/app/mat/mat.module.ts`.  They can then be used in any other component.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Theming
+Change the colors of the Material theme in src/mat-theme.scss. [Material Palette](https://www.materialpalette.com/) is useful for theming.
