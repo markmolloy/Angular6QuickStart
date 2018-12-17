@@ -1,0 +1,35 @@
+.welcome {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10%;
+    background: var(--primary-color);
+    background-image: linear-gradient(
+        25deg,
+        var(--primary-color),
+        var(--primary-color) 70%,
+        var(--accent-color) 60%,
+        transparent);
+}
+
+.welcome>*,
+a {
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 100;
+}
